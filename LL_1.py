@@ -22,12 +22,12 @@ class LinkedList:
         return True
         
 
-    # WRITE FIND_MIDDLE_NODE METHOD HERE #
-    #                                    #
-    #                                    #
-    #                                    #
-    #                                    #
-    ######################################
+    def find_middle_node(self):
+        slow = fast = self.head
+        while (not fast == None and not fast.next == None):
+            slow = slow.next
+            fast = fast.next.next
+        return slow
 
 
 
